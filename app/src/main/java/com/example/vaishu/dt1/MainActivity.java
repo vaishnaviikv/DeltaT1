@@ -10,21 +10,25 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
+    TextView myT,myT1,myT2,myT3,myT4,myT5,myT6;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        myT = (TextView) findViewById(R.id.textView3);
+        myT1 = (TextView) findViewById(R.id.textView4);
+        myT2= (TextView) findViewById(R.id.textView5);
+        myT3 = (TextView) findViewById(R.id.textView6);
+        myT4 = (TextView) findViewById(R.id.textView7);
+        myT5 = (TextView) findViewById(R.id.textView8);
     }
 
     int n;
     int[] cnt= new int[]{0, 0, 0, 0, 0, 0};
     int ch = 0;
-    TextView myT = (TextView) findViewById(R.id.textView3);
-    TextView myT1 = (TextView) findViewById(R.id.textView4);
-    TextView myT2= (TextView) findViewById(R.id.textView5);
-    TextView myT3 = (TextView) findViewById(R.id.textView6);
-    TextView myT4 = (TextView) findViewById(R.id.textView7);
-    TextView myT5 = (TextView) findViewById(R.id.textView8);
+
     public void infinitystone(View view) {
 
 
@@ -88,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
                 ch = 1;
 
         if (ch == 0) {
-            TextView myT6 = (TextView) findViewById(R.id.textView9);
+            myT6 = (TextView) findViewById(R.id.textView9);
             myT6.setText(mesg);
 
         }
@@ -107,6 +111,7 @@ public class MainActivity extends AppCompatActivity {
        myT3.setText(s);
        myT4.setText(s);
        myT5.setText(s);
+       myT6.setText(s);
 
         ch = 0;
     }
